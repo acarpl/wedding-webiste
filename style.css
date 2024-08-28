@@ -1,0 +1,285 @@
+/* Body HTML */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* No-Scroll Class */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Cover Section */
+#Cover {
+  background-image: url(assets/bg-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: black;
+  font-family: "Dancing Script", Poppins;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Border Style */
+.border {
+  transition-duration: 0.5s;
+  padding: 16px 40px;
+  border: 1px;
+  border-radius: 10px;
+  background-color: #ffffff5e;
+  margin: 20px;
+  display: inline-block;
+}
+
+.border:hover {
+  padding: 40px 60px;
+  background-color: #fff2355e;
+  font-size: 20px;
+  color: white;
+}
+
+/* Button Styles */
+.button {
+  margin-top: 5px;
+  padding: 15px 30px;
+  background-color: #ffffff5d;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: #fff2355e;
+  padding: 20px 45px;
+  color: white;
+}
+
+/* Main Section */
+#main {
+  display: none;
+  padding: 20px;
+}
+
+.qoutes,
+.pengantin,
+.event {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Geometric Decorations */
+.geometri-r,
+.geometri-l {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.geometri-r {
+  left: 80%;
+  transform: translateX(-50%);
+  margin: 8rem;
+}
+
+.geometri-l {
+  right: 0%;
+  transform: translateX(-50%);
+  margin: 7rem;
+}
+
+/* Quotes */
+.qoutes {
+  padding: 15px 70px;
+  border: 1px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  background-color: rgba(239, 212, 172, 0.265);
+}
+
+/* Profil pengantin */
+.profil .Pengantin-wanita {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  /* Sesuai Selera Warna */
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.profil .pengantin-laki-laki {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.profil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profil p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Event Section */
+.event {
+  transition-duration: 0.5s;
+  padding: 10px;
+  border-radius: 20px;
+}
+.event:hover {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(226, 165, 75, 0.647);
+}
+
+/* Gallery */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+/* #gallery img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+}
+
+#gallery video {
+  width: 45%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+} */
+
+/* corousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  background-color: rgba(202, 192, 216, 0.467);
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.carousel button:hover {
+  position: absolute;
+  transform: translateY(-50%);
+  background-color: rgba(202, 192, 216, 0.467);
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.button-prev {
+  left: 10px;
+}
+
+.button-next {
+  right: 10px;
+}
+
+/* RSVP */
+#RSVP {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#RSVP form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#RSVP label {
+  font-size: 16px;
+}
+
+#RSVP input {
+  padding: 20px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#RSVP select {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
